@@ -1,0 +1,21 @@
+{
+  "name": "Balen",
+  "short_name": "Balen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050b14",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "balen_sitting.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "balen_sitting.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

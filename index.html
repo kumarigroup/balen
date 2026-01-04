@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Balen</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/webp" href="balen_sitting.webp">
+  <link rel="apple-touch-icon" href="balen_sitting.webp">
+
+  <!-- iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="म नेपाल हाँसेको हेर्न चाहन्छु — Balen">
+  <meta property="og:description" content="परिवर्तनको घण्टी बजाऔं। Balen Shah — Rastriya Swatantra Party.">
+  
+  <meta property="og:type" content="website">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="म नेपाल हाँसेको हेर्न चाहन्छु — Balen">
+  <meta name="twitter:description" content="Ring the bell for change. Balen">
+ 
+ <meta property="og:image" content="/balen_sitting.webp">
+<meta property="og:url" content="/">
+<link rel="canonical" href="/">
+<meta name="twitter:image" content="/balen_sitting.webp">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0b1a2a, #050b14);
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .call-text {
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    .bell-btn {
+      background: #0ea5e9;
+      border: none;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      color: white;
+      font-size: 26px;
+      cursor: pointer;
+      box-shadow: 0 0 25px rgba(14,165,233,0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .bell-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px rgba(14,165,233,0.8);
+    }
+
+    .bell-btn i.ring {
+      animation: ring 0.6s ease-in-out;
+    }
+
+    @keyframes ring {
+      0% { transform: rotate(0); }
+      20% { transform: rotate(15deg); }
+      40% { transform: rotate(-15deg); }
+      60% { transform: rotate(10deg); }
+      80% { transform: rotate(-10deg); }
+      100% { transform: rotate(0); }
+    }
+
+    .card {
+      margin-top: 40px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 16px;
+    }
+
+    .name {
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+    }
+
+    .party {
+      opacity: 0.75;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .social-links a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+      transition: background 0.2s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      background: #0ea5e9;
+      transform: translateY(-3px);
+    }
+
+    .cta-text {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.15);
+      margin: 30px 0;
+    }
+
+    .disclaimer {
+      font-size: 0.75rem;
+      line-height: 1.5;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+
+    <h1 class="title">"म नेपाल हाँसेको हेर्न चाहन्छु"</h1>
+    <p class="subtitle">— Balen </p>
+
+    <p class="call-text">परिवर्तनको घण्टी बजाऔं !</p>
+
+    <button class="bell-btn" onclick="ringBell()">
+      <i class="fa-solid fa-bell"></i>
+    </button>
+
+    <div class="card">
+      <img src="balen_sitting.webp" alt="Balen Shah" class="profile-img"/>
+
+      <h2 class="name">Balen</h2><br>
+      <p class="party">Rastriya Swatantra Party</p><br>
+
+
+      <div class="social-links">
+        <a href="https://facebook.com/balenofficial" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/balenshah" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/shahbalen" target="_blank" aria-label="Twitter/X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@balenshah" target="_blank" aria-label="YouTube">
+  <i class="fab fa-youtube"></i>
+</a>
+
+        
+      </div>
+    </div>
+
+    <p class="cta-text"><br><br>
+      Ring the bell to change.<br><br><br>
+      <strong>Balen for Prime Minister</strong>
+    </p>
+<br><br><br><br><br><br><br><br>
+    <div class="divider"></div>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong><br>
+      यो वेबसाइट स्वतन्त्र नागरिक अभिव्यक्तिका लागि तयार गरिएको हो। यो कुनै राजनीतिक दल वा उम्मेदवारको आधिकारिक अभियानसँग सम्बन्धित छैन। यहाँबाट कुनै पनि आर्थिक योगदान वा चन्दा संकलन गरिँदैन। सामग्री व्यक्तिगत र सांकेतिक प्रयोजनका लागि मात्र हो।
+    </div>
+
+  </main>
+
+
+<script>
+  function ringBell() {
+    const bell = document.querySelector(".bell-btn i");
+    bell.classList.add("ring");
+    setTimeout(() => bell.classList.remove("ring"), 600);
+  }
+
+</script>
+
+</body>
+</html>
